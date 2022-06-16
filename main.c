@@ -30,6 +30,7 @@ void animate()
 
     UpdateTime(&time);
     UpdateRigidbodies(time.deltaTime);
+    UpdateCollisions();
 
     glutPostRedisplay();
 }

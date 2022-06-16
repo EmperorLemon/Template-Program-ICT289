@@ -24,6 +24,8 @@ void DrawAxes()
 
 void CreateScene()
 {
+    glEnable(GL_DEPTH_TEST);
+
     CreateCamera();
     LoadObjects();
 }
@@ -61,7 +63,8 @@ void UpdateRigidbodies(float deltaTime)
 
 void UpdateCollisions()
 {
-
+    if (SpherePlaneDetection(&objectArray[0].rigidbody, &objectArray[1].rigidbody))
+        SpherePlaneResponse(&objectArray[0].rigidbody, &objectArray[1].rigidbody);
 }
 
 void EndScene()

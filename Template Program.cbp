@@ -35,6 +35,7 @@
 		<Unit filename="include/Camera.h" />
 		<Unit filename="include/Collections.h" />
 		<Unit filename="include/Collider.h" />
+		<Unit filename="include/Collision.h" />
 		<Unit filename="include/Color.h" />
 		<Unit filename="include/Controls.h" />
 		<Unit filename="include/List.h" />
@@ -58,6 +59,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/Collider.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Collision.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/Controls.c">

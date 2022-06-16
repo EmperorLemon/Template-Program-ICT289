@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Rigidbody.h"
+#include "Collision.h"
 
 void UpdatePhysics(Rigidbody* rb, Transform* tf, float time);
 

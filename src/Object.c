@@ -41,6 +41,8 @@ void SetCollider(Rigidbody* rb, Object* o)
     rb->centre = GetCentre(&o->mesh);
     rb->collider.radius = GetSphereRadius(&o->mesh, &o->rigidbody.centre);
 
+    CalculateNormals(&o->mesh);
+
     rb->collider.point = o->mesh.verts[0];
     rb->collider.normal = o->mesh.normals[0];
 }
@@ -53,8 +55,7 @@ void SetTransform(Transform* tf)
 
 void DrawObject(const Object* o)
 {
-    if (!o->isVisible)
-        return;
+    if (!o->isVisible) return;
 
     DrawMesh(&o->mesh);
 }
@@ -62,7 +63,7 @@ void DrawObject(const Object* o)
 void UpdateObject(const Object* o)
 {
     glPushMatrix();
-    TranslateV(o->transform.position);
+    TranslateV(&o->transform.position);
     DrawObject(o);
     glPopMatrix();
 }

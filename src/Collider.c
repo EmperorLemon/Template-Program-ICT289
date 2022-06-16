@@ -19,7 +19,7 @@ Vector3 GetCentre(const Mesh* m)
     for (int i = 0; i < m->nverts; i++)
         centre = add(&centre, &m->verts[i]);
 
-    return divide(&centre, m->nverts);
+    return scalarDivide(&centre, m->nverts);
 }
 
 float GetSphereRadius(const Mesh* m, const Vector3* centre)

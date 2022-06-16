@@ -28,9 +28,14 @@ float getMagSqr(const Vector3* u)
     return u->x * u->x + u->y * u->y + u->z * u->z;
 }
 
+float dot(const Vector3* u, const Vector3* v)
+{
+    return u->x * v->x + u->y * v->y + u->z * v->z;
+}
+
 Vector3 neg(const Vector3* u)
 {
-    return multiply(u, -1);
+    return scalarMultiply(u, -1);
 }
 
 Vector3 add(const Vector3* u, const Vector3* v)
@@ -49,7 +54,7 @@ Vector3 subtract(const Vector3* u, const Vector3* v)
     };
 }
 
-Vector3 multiply(const Vector3* u, const float t)
+Vector3 scalarMultiply(const Vector3* u, const float t)
 {
     return (Vector3)
     {
@@ -57,12 +62,24 @@ Vector3 multiply(const Vector3* u, const float t)
     };
 }
 
-Vector3 divide(const Vector3* u, const float t)
+Vector3 scalarDivide(const Vector3* u, const float t)
 {
     if ((int)t != 0)
         return (Vector3){u->x / t, u->y / t, u->z / t};
 
     return *u;
+}
+
+Vector3 project(const Vector3* u, const Vector3* v)
+{
+    return scalarMultiply(v, dot(u,v) / dot(v,v));
+}
+
+Vector3 reflect(const Vector3* v, const Vector3* n)
+{
+    Vector3 proj = scalarMultiply(n, -2 * dot(v,n));
+
+    return add(v, &proj);
 }
 
 Vector3 cross(const Vector3* u, const Vector3* v)
@@ -77,5 +94,5 @@ Vector3 cross(const Vector3* u, const Vector3* v)
 
 Vector3 norm(const Vector3* u)
 {
-    return divide(u, getMag(u));
+    return scalarDivide(u, getMag(u));
 }

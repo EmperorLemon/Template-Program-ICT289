@@ -4,7 +4,7 @@
 
 void InitCamera(Camera* camera)
 {
-    camera->position = (Vector3){0,0,5};
+    camera->position = (Vector3){0,2,10};
     camera->front = (Vector3){0,0,-1};
     camera->up = (Vector3){0,1,0};
     camera->right = cross(&camera->front, &camera->right);

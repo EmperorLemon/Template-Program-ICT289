@@ -8,4 +8,4 @@ typedef struct
     Vector3 scale;
 } Transform;
 
-void TranslateV(const Vector3 pos);
+void TranslateV(const Vector3* pos);

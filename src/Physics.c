@@ -24,17 +24,17 @@ void UpdatePhysics(Rigidbody* rb, Transform* tf, float time)
 
 Vector3 Force(const Rigidbody* rb)
 {
-    return multiply(&rb->acceleration, rb->mass);
+    return scalarMultiply(&rb->acceleration, rb->mass);
 }
 
 Vector3 Acceleration(const Rigidbody* rb)
 {
-    return divide(&rb->force, rb->mass);
+    return scalarDivide(&rb->force, rb->mass);
 }
 
 Vector3 Velocity(const Rigidbody* rb, float time)
 {
-    Vector3 at = multiply(&rb->acceleration, time);
+    Vector3 at = scalarMultiply(&rb->acceleration, time);
 
     return add(&rb->velocity, &at);
 }
@@ -45,16 +45,16 @@ Vector3 Displacement(Rigidbody* rb, Transform* tf, float time)
     rb->transform.position = tf->position;
 
     // vi * t
-    Vector3 vit = multiply(&rb->velocity, time);
+    Vector3 vit = scalarMultiply(&rb->velocity, time);
 
     // P + (vi * t)
     Vector3 pvit = add(&rb->transform.position, &vit);
 
     // a * t^2
-    Vector3 aTSqr = multiply(&rb->acceleration, time * time);
+    Vector3 aTSqr = scalarMultiply(&rb->acceleration, time * time);
 
     // 1/2 * (a * t^2)
-    Vector3 haTSqr = divide(&aTSqr, 2);
+    Vector3 haTSqr = scalarDivide(&aTSqr, 2);
 
     // P(vi * t) + (a * t^2)
     return add(&pvit, &haTSqr);
