@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Template Program" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Template Program" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Template Program" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="data/sphere.off" />
+		<Unit filename="include/Camera.h" />
+		<Unit filename="include/Collections.h" />
+		<Unit filename="include/Collider.h" />
+		<Unit filename="include/Color.h" />
+		<Unit filename="include/Controls.h" />
+		<Unit filename="include/List.h" />
+		<Unit filename="include/MATH_CONSTANTS.h" />
+		<Unit filename="include/Mesh.h" />
+		<Unit filename="include/Object.h" />
+		<Unit filename="include/Physics.h" />
+		<Unit filename="include/ReadFile.h" />
+		<Unit filename="include/Rigidbody.h" />
+		<Unit filename="include/Scene.h" />
+		<Unit filename="include/Time.h" />
+		<Unit filename="include/Transform.h" />
+		<Unit filename="include/Vector.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Camera.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Collections.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Collider.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Controls.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/List.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Mesh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Object.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Physics.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/ReadFile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Scene.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Transform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Vector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

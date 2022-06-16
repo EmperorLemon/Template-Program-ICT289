@@ -1,0 +1,122 @@
+# depslib dependency file v1.0
+1655379004 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\main.c
+	<stdio.h>
+	<GL/freeglut.h>
+	"./include/Scene.h"
+
+1655377106 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\scene.h
+	"Camera.h"
+	"Physics.h"
+	"Collections.h"
+	"Controls.h"
+	"Time.h"
+
+1655379566 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\scene.c
+	"../include/Scene.h"
+	<GL/freeglut.h>
+	<stdlib.h>
+	<stdio.h>
+
+1655375959 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\collider.c
+	"../include/Collider.h"
+	<GL/freeglut.h>
+
+1655374984 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\collider.h
+	"Vector.h"
+	"Mesh.h"
+
+1655375703 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\vector.h
+
+1655377552 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\mesh.c
+	"../include/Mesh.h"
+	<GL/freeglut.h>
+
+1655377508 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\mesh.h
+	"Vector.h"
+	"Color.h"
+
+1655375699 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\vector.c
+	"../include/Vector.h"
+	<math.h>
+	<stdio.h>
+
+1655272140 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\color.h
+
+1655378247 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\object.c
+	"../include/Object.h"
+	"../include/ReadFile.h"
+	"../include/MATH_CONSTANTS.h"
+	<GL/freeglut.h>
+
+1655375201 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\object.h
+	"Mesh.h"
+	"Transform.h"
+	"Rigidbody.h"
+
+1655272140 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\transform.h
+	"Vector.h"
+
+1655376918 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\rigidbody.h
+	"Collider.h"
+	"Transform.h"
+
+1655377724 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\readfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../include/ReadFile.h"
+
+1655377732 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\readfile.h
+	"Mesh.h"
+
+1655272105 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\transform.c
+	"../include/Transform.h"
+	<GL/freeglut.h>
+
+1655299309 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\camera.h
+	"Vector.h"
+
+1655378583 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\camera.c
+	"../include/Camera.h"
+	<GL/freeglut.h>
+	<math.h>
+
+1655377776 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\physics.c
+	"../include/Physics.h"
+	<GL/freeglut.h>
+
+1655376979 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\physics.h
+	"Rigidbody.h"
+
+1655277263 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\math_constants.h
+	"Vector.h"
+	<math.h>
+
+1655275584 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\time.h
+
+1655275925 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\time.c
+	"../include/Time.h"
+	<GL/freeglut.h>
+
+1655377099 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\collections.h
+	"List.h"
+
+1655379598 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\list.h
+	"Object.h"
+
+1655379538 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\collections.c
+	"../include/Collections.h"
+
+1655379610 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\list.c
+	"../include/List.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1655286193 c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\include\controls.h
+
+1655299438 source:c:\users\cjmee\onedrive - murdoch university\university\year 2\ict289 exam 2022\template program\template program\src\controls.c
+	"../include/Controls.h"
+	"../include/Scene.h"
+	<GL/freeglut.h>
+
