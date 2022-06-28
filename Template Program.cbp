@@ -38,8 +38,10 @@
 		<Unit filename="include/Collision.h" />
 		<Unit filename="include/Color.h" />
 		<Unit filename="include/Controls.h" />
+		<Unit filename="include/Lighting.h" />
 		<Unit filename="include/List.h" />
 		<Unit filename="include/MATH_CONSTANTS.h" />
+		<Unit filename="include/Matrix.h" />
 		<Unit filename="include/Mesh.h" />
 		<Unit filename="include/Object.h" />
 		<Unit filename="include/Physics.h" />
@@ -67,7 +69,13 @@
 		<Unit filename="src/Controls.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="src/Lighting.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/List.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Matrix.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/Mesh.c">

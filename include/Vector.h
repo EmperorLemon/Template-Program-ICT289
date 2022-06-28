@@ -2,6 +2,11 @@
 
 typedef struct
 {
+    float x,y,z,w;
+}Vector4;
+
+typedef struct
+{
     float x,y,z;
 } Vector3;
 

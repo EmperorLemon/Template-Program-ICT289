@@ -12,3 +12,8 @@ void UpdateTime(Time* t)
     t->deltaTime = (float) (t->curTime - t->prevTime) / 1000.0f;
     t->prevTime = t->curTime;
 }
+
+void ResetTime(Time* t)
+{
+    t->curTime = t->prevTime;
+}

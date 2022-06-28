@@ -20,5 +20,5 @@ void SetCollider(Rigidbody* rb, Object* o);
 void SetTransform(Transform* tf);
 void DrawObject(const Object* o);
 void NormalizeObject(Object* o);
-void UpdateObject(const Object* o);
+void UpdateObject(Object* o);
 void Destroy(Object* o);

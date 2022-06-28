@@ -20,12 +20,13 @@ Object GenerateObject(char* name)
 void SetMesh(Mesh* m, const Object* o)
 {
     *m = readMeshFile(o->name);
-    m->color = (Color){1,1,1};
+    m->mat.color = (Color){1,1,1};
+    SetMaterial(&m->mat);
 }
 
 void SetRigidbody(Rigidbody* rb)
 {
-    rb->acceleration = Gravity();
+    rb->acceleration = (Vector3){0,GRAVITY,0};
     rb->velocity = zero();
     rb->force = zero();
 
@@ -38,9 +39,16 @@ void SetRigidbody(Rigidbody* rb)
 
 void SetCollider(Rigidbody* rb, Object* o)
 {
-    rb->centre = GetCentre(&o->mesh);
-    rb->collider.radius = GetSphereRadius(&o->mesh, &o->rigidbody.centre);
+    rb->collider.radius = 1;
 
+    CalculateNormals(&o->mesh);
+
+    rb->collider.point = o->mesh.verts[0];
+    rb->collider.normal = o->mesh.normals[0];
+}
+
+void UpdateCollider(Rigidbody* rb, Object* o)
+{
     CalculateNormals(&o->mesh);
 
     rb->collider.point = o->mesh.verts[0];
@@ -50,6 +58,7 @@ void SetCollider(Rigidbody* rb, Object* o)
 void SetTransform(Transform* tf)
 {
     tf->position = zero();
+    tf->rotation = zero();
     tf->scale = one();
 }
 
@@ -60,12 +69,25 @@ void DrawObject(const Object* o)
     DrawMesh(&o->mesh);
 }
 
-void UpdateObject(const Object* o)
+void UpdateObject(Object* o)
 {
+    glEnable(GL_COLOR_MATERIAL);
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(o->mesh.mat.color.r, o->mesh.mat.color.g, o->mesh.mat.color.b);
+
     glPushMatrix();
+
     TranslateV(&o->transform.position);
+    RotateV(&o->transform.rotation);
+    ScaleV(o->rigidbody.collider.radius);
+
     DrawObject(o);
+    UpdateCollider(&o->rigidbody, o);
+    DrawMaterial(&o->mesh.mat);
+
     glPopMatrix();
+
+    glDisable(GL_COLOR_MATERIAL);
 }
 
 void Destroy(Object* o)

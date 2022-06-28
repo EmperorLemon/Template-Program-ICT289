@@ -4,7 +4,7 @@
 #include <math.h>
 
 #define PI 3.141592654
+#define DEG2RAD PI / 180.0
+#define RAD2DEG 180.0 / PI
+#define GRAVITY -9.81
 
-Vector3 Gravity();
-
-Vector3 Gravity(){return (Vector3){0,-9.81f,0};}

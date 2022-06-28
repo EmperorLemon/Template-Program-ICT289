@@ -1,6 +1,5 @@
 #include "../include/Vector.h"
 #include <math.h>
-#include <stdio.h>
 
 Vector3 one()
 {
@@ -77,9 +76,9 @@ Vector3 project(const Vector3* u, const Vector3* v)
 
 Vector3 reflect(const Vector3* v, const Vector3* n)
 {
-    Vector3 proj = scalarMultiply(n, -2 * dot(v,n));
+    Vector3 proj = scalarMultiply(n, 2 * dot(v,n));
 
-    return add(v, &proj);
+    return subtract(v, &proj);
 }
 
 Vector3 cross(const Vector3* u, const Vector3* v)

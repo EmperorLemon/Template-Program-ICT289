@@ -120,22 +120,23 @@
 	"../include/Scene.h"
 	<GL/freeglut.h>
 
-1655380933 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\main.c
+1655874501 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\main.c
 	<stdio.h>
 	<GL/freeglut.h>
 	"./include/Scene.h"
 
-1655377106 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\scene.h
+1655723811 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\scene.h
 	"Camera.h"
 	"Physics.h"
 	"Collections.h"
+	"Lighting.h"
 	"Controls.h"
 	"Time.h"
 
-1655299309 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\camera.h
+1655723785 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\camera.h
 	"Vector.h"
 
-1655382706 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\vector.h
+1655879612 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\vector.h
 
 1655380734 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\physics.h
 	"Collision.h"
@@ -148,14 +149,15 @@
 	"Vector.h"
 	"Mesh.h"
 
-1655377508 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\mesh.h
+1655464162 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\mesh.h
 	"Vector.h"
 	"Color.h"
 
 1655272140 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\color.h
 
-1655380056 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\transform.h
+1655715254 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\transform.h
 	"Vector.h"
+	"Matrix.h"
 
 1655377099 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\collections.h
 	"List.h"
@@ -163,28 +165,28 @@
 1655379598 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\list.h
 	"Object.h"
 
-1655375201 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\object.h
+1655714924 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\object.h
 	"Mesh.h"
 	"Transform.h"
 	"Rigidbody.h"
 
-1655286193 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\controls.h
+1655449283 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\controls.h
 
-1655275584 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\time.h
+1655721247 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\time.h
 
-1655381080 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\camera.c
+1655723779 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\camera.c
 	"../include/Camera.h"
 	<GL/freeglut.h>
 	<math.h>
 
-1655381358 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\collections.c
+1655877805 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\collections.c
 	"../include/Collections.h"
 
 1655382386 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\collider.c
 	"../include/Collider.h"
 	<GL/freeglut.h>
 
-1655299438 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\controls.c
+1655861274 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\controls.c
 	"../include/Controls.h"
 	"../include/Scene.h"
 	<GL/freeglut.h>
@@ -195,11 +197,12 @@
 	<stdlib.h>
 	<string.h>
 
-1655377552 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\mesh.c
+1655867201 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\mesh.c
 	"../include/Mesh.h"
 	<GL/freeglut.h>
+	<math.h>
 
-1655381740 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\object.c
+1655801111 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\object.c
 	"../include/Object.h"
 	"../include/ReadFile.h"
 	"../include/MATH_CONSTANTS.h"
@@ -208,11 +211,11 @@
 1655377732 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\readfile.h
 	"Mesh.h"
 
-1655277263 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\math_constants.h
+1655714269 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\math_constants.h
 	"Vector.h"
 	<math.h>
 
-1655382447 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\physics.c
+1655817556 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\physics.c
 	"../include/Physics.h"
 	<GL/freeglut.h>
 
@@ -222,30 +225,57 @@
 	<string.h>
 	"../include/ReadFile.h"
 
-1655382740 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\scene.c
+1655897832 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\scene.c
 	"../include/Scene.h"
 	<GL/freeglut.h>
 	<stdlib.h>
 	<stdio.h>
 
-1655275925 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\time.c
+1655721204 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\time.c
 	"../include/Time.h"
 	<GL/freeglut.h>
 
-1655380042 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\transform.c
+1655715345 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\transform.c
 	"../include/Transform.h"
 	<GL/freeglut.h>
 
-1655382415 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\vector.c
+1655879609 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\vector.c
 	"../include/Vector.h"
 	<math.h>
-	<stdio.h>
 
-1655382576 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\collision.h
+1655879447 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\collision.h
 	"Rigidbody.h"
 
-1655382711 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\collision.c
+1655879681 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\collision.c
 	"../include/Collision.h"
 	<stdlib.h>
 	<stdio.h>
+
+1655444249 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\lighting.h
+
+1655874546 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\lighting.c
+	"../include/Lighting.h"
+	<GL/freeglut.h>
+
+1655463989 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\material.c
+	"../include/Material.h"
+	<GL/freeglut.h>
+
+1655464022 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\material.h
+	"Vector.h"
+
+1655454557 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\testfile.c
+	<gl/freeglut.h>
+	<GLUT/glut.h>
+	"./include/ReadFile.h"
+	<math.h>
+
+1655711373 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\test1.c
+	<GL/freeglut.h>
+
+1655714739 source:c:\users\cjmee\onedrive\documents\github\template-program-ict289\src\matrix.c
+	"../include/Matrix.h"
+	"../include/MATH_CONSTANTS.h"
+
+1655714801 c:\users\cjmee\onedrive\documents\github\template-program-ict289\include\matrix.h
 

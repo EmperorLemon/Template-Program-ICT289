@@ -6,5 +6,8 @@ typedef struct
     float deltaTime;
 }Time;
 
-void StartTime();
-void UpdateTime();
+Time time;
+
+void StartTime(Time* t);
+void UpdateTime(Time* t);
+void ResetTime(Time* t);

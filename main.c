@@ -19,7 +19,12 @@ void init()
 
     CreateScene();
 
+    glutPassiveMotionFunc(mouse_motion);
     glutKeyboardFunc(keyboard_down);
+    glutKeyboardUpFunc(keyboard_up);
+    glutSpecialFunc(arrow_keys);
+
+    StartTime(&time);
 
     glutTimerFunc(TARGET_FPS, animate, 0);
 }
@@ -31,6 +36,7 @@ void animate()
     UpdateTime(&time);
     UpdateRigidbodies(time.deltaTime);
     UpdateCollisions();
+    ResetTime(&time);
 
     glutPostRedisplay();
 }
@@ -60,8 +66,12 @@ void display()
     UpdateCamera(&cam);
 
     DrawAxes();
+    DefineLight(&light);
+    UpdateLight(&light);
 
     DrawObjects();
+
+    glDisable(GL_LIGHTING);
 
     glutSwapBuffers();
 }
